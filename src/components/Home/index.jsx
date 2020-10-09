@@ -5,7 +5,14 @@ function Home() {
   return (
     <div className="home">
       <div className="container">
-        <h1 className="text-center">Home</h1>
+        <div className="home-wrapper">
+          <img src={require('../../assets/github-logo.png')} alt="logo"/>
+          <h1>Search User</h1>
+          <div>
+            <input type="text" placeholder="Username"/>
+            <button>Continue</button>
+          </div>
+        </div>
       </div>
     </div>
   )
