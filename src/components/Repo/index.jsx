@@ -41,9 +41,13 @@ function Repo(props) {
 
   const showData = () => {
     if (data === 404 && error) {
-      return <p>Not Found</p>
+      return <div className="err-wrapper">
+        <h3>User not found</h3>
+      </div>
     } else if (error) {
-      return <p>Something when wrong</p>
+      return <div className="err-wrapper">
+        <h3>Something when wrong</h3>
+      </div>
     } else {
       return data
         .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
@@ -71,7 +75,9 @@ function Repo(props) {
         {
           loading 
           ?
-          <p>loading...</p>
+          <div className="loading-wrapper">
+            <h3>loading...</h3>
+          </div>
           :
           <div className="repo-wrapper">
             { showProfile() }

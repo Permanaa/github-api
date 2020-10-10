@@ -1,5 +1,4 @@
 .repo {
-  height: 100%;
   background-color: #F5F6FA;
   padding-bottom: 20px;
 }
@@ -48,4 +47,14 @@
   height: 90px;
   border-radius: 3px;
   margin-right: 20px;
+}
+
+.loading-wrapper, .err-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.err-wrapper {
+  grid-column: span 12;
 }
