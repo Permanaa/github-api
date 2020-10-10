@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -24,12 +25,10 @@ li {
 
 /* fonts */
 h1,h2,h3{
-  color: white;
   margin: 10px 0;
 }
 
 p,a,li,input {
-  color: white;
   line-height: 1.4em;
   font-size: 1em;
 }
@@ -40,10 +39,12 @@ h1 {
 
 h2 {
   font-size: 1.4em;
+  color: #393454;
 }
 
 h3 {
   font-size: 1.1em;
+  color: #303030
 }
 
 /* style */
