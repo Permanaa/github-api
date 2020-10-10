@@ -54,10 +54,6 @@
   align-items: center;
 }
 
-.repo-item:last-child {
-  margin-bottom: 20px;
-}
-
 .repo-item h3 {
   margin: 0;
   margin-bottom: 5px;
@@ -131,10 +127,6 @@
   .repo-item {
     grid-column: span 6;
   }
-
-  .repo-item:nth-last-child(2) {
-    margin-bottom: 20px;
-  }
 }
 
 @media screen and (min-width: 960px) {
@@ -148,10 +140,6 @@
 
   .repo-item {
     grid-column: span 4;
-  }
-
-  .repo-item:nth-last-child(3) {
-    margin-bottom: 20px;
   }
 }
 
