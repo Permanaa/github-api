@@ -42,18 +42,18 @@ function Repo(props) {
   const showData = () => {
     if (data === 404 && error) {
       return <div className="err-wrapper">
-        <h3>User not found</h3>
+        <h3>User not found.</h3>
       </div>
     } else if (error) {
       return <div className="err-wrapper">
-        <h3>Something when wrong</h3>
+        <h3>Something when wrong.</h3>
       </div>
     } else {
       return data
         .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
         .map((repo, key) => (
           <div key={key} className="repo-item">
-            <div style={{ border: `3px solid ${LangColors[repo.language] ? LangColors[repo.language] : '#A5B1C1' }`}} className="vl"></div>
+            <div style={{ border: `2px solid ${LangColors[repo.language] ? LangColors[repo.language] : '#A5B1C1' }`}} className="vl"></div>
             <div>
               <h3>{repo.name}</h3>
               <p className="updated">Updated {updatedDate(repo.updated_at)}</p>
